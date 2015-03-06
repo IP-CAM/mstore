@@ -70,6 +70,20 @@ class ControllerCommonFooter extends Controller {
 			$this->model_tool_online->whosonline($ip, $this->customer->getId(), $url, $referer);
 		}
 
+        // you can like
+        $this->load->model('catalog/product');
+        $canLikeProduct = $this->model_catalog_product->getYouCanLikeProduct();
+        if ($canLikeProduct) {
+            foreach ($canLikeProduct as $key => $row) {
+                if ($row['image']) {
+                    $canLikeProduct[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                } else {
+                    $canLikeProduct[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                }
+            }
+        }
+        $data['can_like_products'] = $canLikeProduct;
+
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/footer.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/template/common/footer.tpl', $data);
 		} else {
