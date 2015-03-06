@@ -1,0 +1,930 @@
+.fixed-container {
+	margin-top: 85px;
+}
+.container {
+    position: relative;
+}
+.pan-top {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 80px;
+	z-index: 99999;
+	background-color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.pan-top-highlight {
+	box-shadow: 0px 0px 3px #dddddd;
+}
+
+.pan-top .pan-logo {
+	width: 300px;
+	height: 75px;
+	float: left;
+}
+.pan-top .pan-logo img {
+	width: 250px;
+	height: 50px;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+
+
+.pan-menu {
+	min-width: 300px;
+	height: 80px;
+	float: left;
+}
+
+/*style for main menu*/
+.pan-menu ul, .pan-top .pan-menu ul li {
+	display: block;
+}
+
+.pan-menu > ul, .pan-top .pan-menu > ul > li {
+	position: relative;	
+	float: left;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: left;
+}
+.pan-menu > ul > li i {
+	position: relative;
+	top: 12px;
+	right: 0px;
+	font-size: 20px;
+	float: right;
+}
+.pan-menu > ul {
+	margin-top: 30px;
+	padding: 0px;
+}
+.pan-menu > ul > li {
+	width: 110px;
+	height: 55px;
+	line-height: 40px;
+	cursor: pointer;
+	padding-left: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-top: 1px solid #000000;
+	overflow: hidden;
+}
+.pan-menu ul li a, .pan-menu ul li a:active {
+	color: #000000;
+	text-decoration: none;
+}
+.pan-menu > ul > li.active {
+	border-top: 7px solid #000000;
+	margin-top: -5px;
+}
+.pan-menu > ul > li:hover {
+	border-top: 7px solid #000000;
+	margin-top: -5px;
+	overflow: visible;
+}
+
+.pan-control {
+	position: relative;
+	min-height: 75px;
+	float: right;
+	margin-right: 5px;
+}
+.pan-control .pan-user ul {
+	float: right;
+	margin-right: 0px;
+}
+.pan-control .pan-user {
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: -7px;
+}
+.pan-control .pan-user ul li {
+	display: block;
+}
+.pan-control .pan-user ul li a {
+	text-decoration: none;
+}
+.pan-control .pan-search {
+	float: right;
+	padding-right: 0px;
+}
+.pan-control .pan-search > button {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	box-shadow: 0px 0px #cccccc;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	float: right;
+	border-radius: 2px;
+	text-align: center;
+}
+.pan-control .pan-search > button span {
+	position: absolute;
+	bottom: 0px;
+	right: -2px;
+	color: #ffffff;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	border-radius: 50px;
+	background-color: #B22222;
+	font-size: 8px;
+}
+.pan-control .pan-search > button > i {
+	position: absolute;
+	width: 28px;
+	height: 30px;
+	top: 0px;
+	right: 0px;
+	line-height: 30px;
+	text-align: center;
+}
+.pan-control .pan-search > button:hover {
+	background-color: #B22222;
+	color: #ffffff;
+}
+.pan-control .pan-search > button:focus {
+	outline: 0;
+}
+.pan-control .pan-search > div {
+	position: relative;
+	width: 255px;
+	height: 32px;
+	float: right;
+	margin-right: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+}
+.pan-control .pan-search > div > i {
+	position: absolute;
+	width: 28px;
+	height: 30px;
+	top: 0px;
+	right: 0px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #B22222;
+	color: #ffffff;
+}
+.pan-control .pan-search > div > i > div {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: #B22222;
+	top: 10px;
+	left: -4px;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.pan-control .pan-search > div > ul {
+	min-height: 30px;
+	float: right;
+	margin-right: 30px;
+}
+.pan-control .pan-search > div > ul > li {
+	display: block;
+	line-height: 30px;
+	width: 100px;
+}
+.pan-control .pan-search ul li a {
+	text-decoration: none;
+	display: block;
+}
+.pan-control .pan-search ul li a .caret {
+	position: absolute;
+	top: 13px;
+	right: 5px;
+}
+.pan-control .pan-search > div input[type="text"] {
+	position: absolute;
+	top: 2px;
+	right: 135px;
+	width: 118px;
+	height: 26px;
+	border: none;
+	border-right: 1px solid #cccccc;
+	border-radius: 0px;
+	padding: 0px 3px;
+}
+.pan-control .pan-search > div input[type="text"]:focus {
+	outline: 0;
+}
+
+.pan-submenu {
+	width: 100%;
+	height: 220px;
+	float: left;
+	border-top: 7px solid #000000;
+	border-bottom: 1px solid #cccccc;
+	box-shadow: 0px 1px 2px #cccccc;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	display: none;
+}
+.pan-submenu .submenu {
+	/*display: none;*/
+	height: 170px;
+	width: 900px;
+	margin: 10px auto;
+}
+.pan-submenu .submenu .submenu-menu {
+	float: left;
+	width: 250px;
+	text-align: right;
+	text-transform: capitalize;
+}
+.pan-submenu .submenu .submenu-menu h3 {
+	margin: 5px 0px;
+}
+.pan-submenu .submenu .submenu-menu ul li {
+	display: block;
+}
+.pan-submenu .submenu .submenu-menu ul li a {
+	color: #000000;
+	text-decoration: none;
+}
+.pan-submenu .submenu .submenu-item-list {
+	float: left;
+	width: 600px;
+	margin-left: 40px;
+}
+.pan-submenu .submenu .submenu-item-list h3 {
+	margin: 5px 30px;
+}
+.pan-submenu .submenu .submenu-item-list .submenu-item {
+	float: left;
+	width: 180px;
+	height: 150px;
+	border-left: 1px solid #cccccc;
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+}
+.pan-submenu .submenu .submenu-item-list .submenu-item img {
+	height: 80px;
+	margin: auto;
+}
+.pan-submenu .submenu .submenu-item-list .submenu-item h4 {
+	margin: 5px auto;
+	width: 70%;
+	word-break: break-all;
+}
+.pan-submenu .submenu .submenu-item-list .submenu-item span {
+	display: block;
+	color: #ffffff;
+	background-color: #000000;
+	width: 140px;
+	position: absolute;
+	left: 20px;
+	bottom: 0px;
+}
+.pan-menu > ul > li.open {
+	border-bottom: 13px solid #000000;
+}
+.pan-submenu.open {
+	display: block;
+}
+
+ul.menu-xs {
+	display: block;
+}
+
+.visible-1024 {
+	display: none;
+}
+.visible-768 {
+	display: none;
+}
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.img-responsive {
+	margin: auto;
+}
+.owl-buttons i {
+	color: #B22222;
+}
+
+/* best categories */
+#pan-hot-category .category-1, #pan-hot-category .category-2, #pan-hot-category .category-3, #pan-hot-category .category-4 {
+    position: relative;
+    text-align: center;
+}
+#pan-hot-category .category-thumb {
+    width: 95%;
+    position: relative;
+    margin: auto;
+}
+
+#pan-hot-category .category-1 img {
+    height: 300px;
+}
+#pan-hot-category .category-1 .category-info, #pan-hot-category .category-4 .category-info {
+    display: block;
+    width: 100%;
+    height: 36px;
+    background-color: #B22222;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#pan-hot-category .category-1 .category-info span, #pan-hot-category .category-4 .category-info span {
+    float: right;
+    margin: 9px 25px;
+    padding: 2px;
+}
+#pan-hot-category .category-2 {
+    height: 150px;
+}
+#pan-hot-category .category-2 img {
+    height: 130px;
+    margin-top: 10px;
+    float: left;
+}
+#pan-hot-category .category-3 {
+    height: 150px;
+}
+#pan-hot-category .category-3 img {
+    height: 130px;
+    margin-top: 10px;
+    float: right;
+}
+#pan-hot-category .category-4 img {
+    height: 300px;
+}
+/* end best categories */
+
+/* carousel latest product */
+.pan-latest {
+    position: relative;
+    padding-top: 36px;
+    margin-top: 50px;
+}
+.pan-latest .latest-title {
+    position: absolute;
+    top: -35px;
+    left: 40%;
+    background-color: #ffffff;
+    padding: 0px 10px 5px 10px;
+}
+.pan-latest .latest-title h3 {
+    background-color: #ffffff;
+    padding: 0px 10px 5px 10px;
+    border-bottom: 1px solid #000000;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+.pan-latest .latest-control {
+    position: absolute;
+    top: -25px;
+    right: 30px;
+}
+.pan-latest .latest-control span {
+    padding: 2px 10px;
+    cursor: pointer;
+}
+.pan-latest .latest-control span:nth-child(2) {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.pan-latest .latest-control span:hover {
+    text-decoration: underline;
+}
+.pan-latest .latest-control .active {
+    color: #B22222;
+    font-weight: bold;
+}
+#carousel-latest-product-all, #carousel-latest-product-shoes, #carousel-latest-product-bag {
+    border-bottom: none;
+    margin: 0px;
+}
+#carousel-latest-product-all .product-thumb, #carousel-latest-product-shoes .product-thumb, #carousel-latest-product-bag .product-thumb {
+    width: 90%;
+    margin: auto;
+}
+/* end carousel latest product */
+
+/* feature */
+.pan-feature {
+    position: relative;
+    padding-top: 36px;
+    margin-top: 50px;
+}
+.pan-feature .feature-title {
+    position: absolute;
+    top: -35px;
+    left: 40%;
+    background-color: #ffffff;
+    padding: 0px 10px 5px 10px;
+}
+.pan-feature .feature-title h3 {
+    background-color: #ffffff;
+    padding: 0px 10px 5px 10px;
+    border-bottom: 1px solid #000000;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+.pan-feature .feature-control {
+    position: absolute;
+    top: -25px;
+    right: 30px;
+}
+.pan-feature .feature-control span {
+    padding: 2px 10px;
+    cursor: pointer;
+}
+.pan-feature .feature-control span:nth-child(2) {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.pan-feature .feature-control span:hover {
+    text-decoration: underline;
+}
+.pan-feature .feature-control .active {
+    color: #B22222;
+    font-weight: bold;
+}
+/* end feature */
+
+.border-top {
+    width: 95%;
+    height: 1px;
+    border-top: 1px dashed;
+    position: absolute;
+    top: 0px;
+    left: 2.5%;
+}
+.pan-horizontal-banner {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.horizontal-banner {
+    width: 99%;
+    margin-top: 15px;
+}
+
+/* 1280 width screen */
+@media screen and (max-width: 1280px) {
+	.visible-768 {
+		display: none;
+	}
+    .pan-menu > ul, .pan-top .pan-menu > ul > li {
+		font-size: 15px;
+	}
+	.pan-menu > ul > li {
+		width: 90px;
+		margin-left: 10px;
+		margin-right: 0px;
+	}
+
+	.visible-1024 {
+		display: none;
+	}
+	ul.menu-xs {
+		display: block;
+	}
+}
+
+/* 1150 width screen */
+@media screen and (max-width: 1150px) {
+	.visible-768 {
+		display: none;
+	}
+	.pan-control .pan-search > div {
+		width: 130px;
+	}
+	.pan-control .pan-search > div > ul > li {
+		width: 15px;
+	}
+	.pan-control .pan-search > div input[type="text"] {
+		right: 45px;
+		width: 80px;
+		border-right: none;
+	}
+
+	.hidden-1150 {
+		display: none;
+	}
+	.hidden-1024 {
+		display: inherit;
+	}
+	.visible-1024 {
+		display: none;
+	}
+	ul.menu-xs {
+		display: block;
+	}
+}
+
+/* 1240 width screen */
+@media screen and (max-width: 1024px) {
+	.visible-768 {
+		display: none;
+	}
+	.hidden-1024 {
+		display: none;
+	}
+	.visible-1024 {
+		display: block;
+	}
+
+	.pan-control .pan-search > div.pull-down {
+		width: 30px;
+		height: 30px;
+		background-color: #ffffff;
+		overflow: hidden;
+		position: relative;
+		border: 1px solid #cccccc;
+		border-radius: 2px;
+	}
+
+	.pan-control .pan-search > div.pull-down i {
+		background-color: #ffffff;
+		color: #000000;
+	}
+
+	.pan-control .pan-search > div.pull-down i:hover {
+		background-color: #B22222;
+	}
+
+	.pan-control .pan-search > div.pull-down:hover {
+		overflow: visible;
+		background-color: #B22222;
+	}
+
+	.pan-control .pan-search > div.pull-down ul {
+		padding: 0px;
+		position: absolute;
+		top: 28px;
+		right: -30px;
+		display: block;
+		width: 275px;
+		min-height: 50px;
+		background-color: #ffffff;
+		box-shadow: 0px 2px 3px #cccccc;
+		border-top: 3px solid #B22222;
+		cursor: default;
+		z-index: 9999;
+	}
+	.pan-control .pan-search > div.pull-down ul li {
+		margin: 5px 0px;
+		padding: 0px 10px;
+		width: 100%;
+		height: 32px;
+		display: block;
+		color: #000000;
+		text-align: left;
+	}
+
+	.pan-control .pan-search > div.pull-down ul li label {
+		display: block;
+		width: 100%;
+		height: 32px;
+		line-height: 32px;
+		cursor: pointer;
+	}
+	.pan-control .pan-search > div.pull-down ul li:hover {
+		background-color: #eeeeee;
+	}
+	.pan-control .pan-search > div.pull-down ul li:first-of-type:hover {
+		background-color: #ffffff;
+	}
+
+
+	div.sub-search {
+		position: relative !important;
+		width: 255px !important;
+		height: 32px !important;
+		float: right !important;
+		border: 1px solid #cccccc !important;
+		border-radius: 2px !important;
+	}
+	div.sub-search > i {
+		position: absolute !important;
+		width: 25px !important;
+		height: 30px !important;
+		top: 0px !important;
+		right: 0px !important;
+		line-height: 30px !important;
+		text-align: center !important;
+		background-color: #B22222 !important;
+		color: #ffffff !important;
+		cursor: pointer !important;
+	}
+	div.sub-search > i > div {
+		position: absolute !important;
+		width: 8px !important;
+		height: 8px !important;
+		background-color: #B22222 !important;
+		top: 10px !important;
+		left: -4px !important;
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	div.sub-search > ul {
+		min-height: 30px !important;
+		float: right !important;
+		margin-right: 30px !important;
+	}
+	div.sub-search > ul > li {
+		display: block !important;
+		line-height: 30px !important;
+		width: 100px !important;
+	}
+	div.sub-search input[type="text"] {
+		position: absolute !important;
+		top: 2px !important;
+		right: 30px !important;
+		width: 220px !important;
+		height: 26px !important;
+		border: none !important;
+		padding: 0px 3px !important;
+		color: #000000 !important;
+	}
+	div.sub-search input[type="text"]:focus {
+		outline: 0 !important;
+	}
+	ul.menu-xs {
+		display: block;
+	}
+}
+
+/* 992 width screen */
+@media screen and (max-width: 992px) {
+	.visible-768 {
+		display: none;
+	}
+	.hidden-1150 {
+		display: inherit;
+	}
+	.hidden-1024 {
+		display: inherit;
+	}
+	.visible-1024 {
+		display: none;
+	}
+
+	.fixed-container {
+		margin-top: 150px;
+	}
+
+	.pan-control .pan-search > button {
+		margin-left: 3px;
+	}
+
+	.pan-top {
+		height: 150px;
+	}
+	.pan-menu {
+		width: 100%;
+		height: auto;
+	}
+
+	.pan-menu > ul {
+		margin-top: 10px;
+		margin-bottom: 0px;
+		width: 98%;
+	}
+
+	.pan-menu > ul, .pan-top .pan-menu > ul > li {
+		font-size: 18px;
+	}
+	.pan-menu > ul > li {
+		width: 18%;
+		margin-left: 2%;
+		margin-right: 0px;
+		height: auto;
+	}
+
+	.pan-submenu .submenu {
+		width: 767px;
+	}
+	.pan-submenu .submenu .submenu-menu {
+		width: 160px;
+	}
+	.pan-submenu .submenu .submenu-item-list {
+		width: 550px;
+	}
+
+	.pan-control {
+		position: absolute;
+		top: 0px;
+		right: 5px;
+		margin-right: 0px;
+		height: 75px;
+	}
+
+	.pan-control .pan-search > div {
+		width: 265px;
+	}
+	.pan-control .pan-search > div > ul > li {
+		width: 100px;
+	}
+	.pan-control .pan-search > div input[type="text"] {
+		right: 135px !important;
+		width: 128px !important;
+		border-right: 1px solid #cccccc !important;
+	}
+
+	ul.menu-xs {
+		display: block;
+	}
+}
+
+/* 768 width screen */
+@media screen and (max-width: 767px) {
+	.visible-768 {
+		display: inherit;
+	}
+	.pan-top {
+		min-height: 75px;
+		height: auto;
+	}
+
+	.pan-menu {
+		height: auto;
+		margin-bottom: 15px;
+	}
+
+	.pan-menu ul.open {
+		display: block !important;
+	}
+
+	.pan-menu > ul > li {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		line-height: 45px;
+		border-top: 1px solid #cccccc;
+	}
+
+	.pan-menu > ul > li:hover {
+		border-top: 1px solid #cccccc;
+		margin-top: 0px;
+		overflow: hidden;
+		background-color: #23a1d1;
+		height: auto;
+		min-height: 45px;
+	}
+
+	.pan-menu > ul > li.active {
+		border-top: 1px solid #cccccc;
+		margin-top: 0px;
+		background-color: #23a1d1;
+	}
+
+	.pan-menu > ul > li ul {
+		background-color: #23a1d1;
+		width: 100%;
+		border-left: none;
+		border-bottom: none;
+		border-right: none;
+		margin: 0px;
+		box-shadow: none;
+	}
+	.pan-menu > ul > li ul li {		
+		margin-right: 5px;
+	}
+	.pan-menu > ul > li ul li:last-of-type a {
+		color: #000000;
+	}
+	.pan-menu > ul > li ul li.menu-all {
+		border-top: 1px solid #cccccc;
+		color: #B22222;
+		margin-right: 5px;
+	}
+	.pan-menu > ul > li ul li.menu-all a {
+		color: #B22222;
+	}
+
+	.pan-menu .pan-search {
+		width: 96%;
+		height: 40px;
+		padding: 0px 2%;
+		position: relative;
+	}
+	.pan-menu .pan-search > div {
+		position: absolute;
+		top: 10px;
+		width: 100%;
+		height: 32px;
+		border: 1px solid #cccccc;
+		border-radius: 2px;
+	}
+	.pan-menu .pan-search > div i.fa-bars {
+		position: absolute;
+		width: 28px;
+		height: 30px;
+		top: 0px;
+		right: 0px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #B22222;
+		color: #ffffff;
+		z-index: 995;
+		cursor: pointer;
+	}
+	.pan-menu .pan-search > div i.fa-search {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: 0px;
+		right: 28px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #B22222;
+		color: #ffffff;
+		z-index: 995;
+		cursor: pointer;
+	}
+	.pan-menu .pan-search > div > i.fa-search > div {
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		background-color: #B22222;
+		top: 10px;
+		left: -4px;
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.pan-menu .pan-search > div > ul {
+		position: absolute;
+		top: 0px;
+		right: 58px;
+		min-height: 30px;
+		z-index: 994;
+		border-left: 1px solid #cccccc;
+		width: 120px;
+		display: block;
+		background-color: #eeeeee;
+		margin: 0px;
+		padding: 0px 0px 0px 10px;
+	}
+	.pan-menu .pan-search > div > ul > li {
+		display: block;
+		line-height: 30px;
+		width: 100%;
+	}
+	.pan-menu .pan-search ul li a {
+		text-decoration: none;
+		display: block;
+	}
+	.pan-menu .pan-search ul li a .caret {
+		position: absolute;
+		top: 13px;
+		right: 8px;
+	}
+	.pan-menu .pan-search > div input[type="text"] {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 30px;
+		border: none;
+		border-radius: 0px;
+		padding: 0px 185px 0px 5px;
+		z-index: 990;
+	}
+	.pan-menu .pan-search > div input[type="text"]:focus {
+		outline: 0;
+	}
+	li.dropdown ul {
+		display: none;
+	}
+
+	.pan-submenu {
+		border-top: none;
+		border: none;
+		box-shadow: none;
+		height: 180px;
+		overflow: hidden;
+	}
+	.pan-submenu .submenu {
+		width: 96%;
+	}
+	.pan-submenu .submenu .submenu-menu {
+		width: 160px;
+	}
+	.pan-submenu .submenu .submenu-item-list {
+		width: 150px;
+	}
+	.pan-submenu .submenu .submenu-menu ul li {
+		margin-top: 5px;
+	}
+
+    .pan-latest .latest-title {
+        left: 20%;
+    }
+}
