@@ -159,7 +159,7 @@ class ControllerProductProduct extends Controller {
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 
 		if ($product_info) {
-            $viewProduct = $this->session->data['view_product'];
+            $viewProduct = !empty($this->session->data['view_product']) ? $this->session->data['view_product'] : null;
             if (empty($viewProduct)) {
                 $viewProduct = array();
                 array_push($viewProduct, $product_id);

@@ -80,12 +80,13 @@ class ControllerCommonFooter extends Controller {
                 } else {
                     $canLikeProduct[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
                 }
+                $canLikeProduct[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['id']);
             }
         }
         $data['can_like_products'] = $canLikeProduct;
 
         // just view product
-        $viewProduct = $this->session->data['view_product'];
+        $viewProduct = !empty($this->session->data['view_product']) ? $this->session->data['view_product'] : null;
         if (!empty($viewProduct)) {
             $justViewProducts = $this->model_catalog_product->getProductByIds($viewProduct);
             if ($justViewProducts) {
@@ -95,6 +96,7 @@ class ControllerCommonFooter extends Controller {
                     } else {
                         $justViewProducts[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
                     }
+                    $justViewProducts[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['id']);
                 }
             }
             $data['view_products'] = $justViewProducts;
