@@ -280,7 +280,8 @@ class ModelCatalogProduct extends Model {
 		if (!$product_data) {
 			$product_data = array();
 
-			$query = $this->db->query("SELECT op.product_id, SUM(op.quantity) AS total FROM " . DB_PREFIX . "order_product op LEFT JOIN `" . DB_PREFIX . "order` o ON (op.order_id = o.order_id) LEFT JOIN `" . DB_PREFIX . "product` p ON (op.product_id = p.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE o.order_status_id > '0' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "' GROUP BY op.product_id ORDER BY total DESC LIMIT " . (int)$limit);
+            $sql = "SELECT op.product_id, SUM(op.quantity) AS total FROM " . DB_PREFIX . "order_product op LEFT JOIN `" . DB_PREFIX . "order` o ON (op.order_id = o.order_id) LEFT JOIN `" . DB_PREFIX . "product` p ON (op.product_id = p.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE o.order_status_id > '0' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "' GROUP BY op.product_id ORDER BY total DESC LIMIT " . (int)$limit;
+			$query = $this->db->query($sql);
 
 			foreach ($query->rows as $result) {
 				$product_data[$result['product_id']] = $this->getProduct($result['product_id']);
@@ -577,4 +578,66 @@ class ModelCatalogProduct extends Model {
 		}
 		return $products;
 	}
+
+    public function getYouCanLikeProduct($limit = 3) {
+        $productIds = $this->db->query("SELECT product_id AS id FROM ".DB_PREFIX."product p WHERE p.status = '1' AND p.date_available <= NOW() ORDER BY id");
+        $idList = array();
+        foreach ($productIds->rows as $currId) {
+            array_push($idList, $currId['id']);
+        }
+        $numProduct = count($idList);
+        $n = 0;
+        $notFound = true;
+        $listProduct = '(';
+        while ($notFound && $n < 3) {
+            $randId = rand(0, $numProduct-1);
+            if (in_array($idList[$randId], $idList)) {
+                $n++;
+                $listProduct .= ($n == 3 ? $idList[$randId] : $idList[$randId].', ');
+                unset($idList[$randId]);
+            }
+        }
+        $listProduct .= ')';
+        if ($listProduct != '()') {
+            $query = $this->db->query("SELECT `pd`.`name`, `p`.`product_id`, `p`.`image`, `p`.`price` FROM `".DB_PREFIX."product` `p` JOIN `".DB_PREFIX."product_description` `pd` ON `p`.`product_id` = `pd`.`product_id` WHERE `p`.`product_id` IN ".$listProduct);
+        }
+        $products = array();
+        if ($query->num_rows) {
+            foreach ($query->rows as $key => $result) {
+                $products[] = array(
+                    'id' 				=> $result['product_id'],
+                    'name' 				=> $result['name'],
+                    'image' 			=> $result['image'],
+                    'price' 			=> $result['price']
+                );
+            }
+        }
+        return $products;
+    }
+
+    public function getProductByIds($ids = array()) {
+        $products = array();
+        if (count($ids) > 0) {
+            $listProduct = '(';
+            foreach ($ids as $key => $result) {
+                $listProduct .= ($key == (count($ids) - 1) ? $result : $result.', ');
+            }
+            $listProduct .= ')';
+            if ($listProduct != '()') {
+                $query = $this->db->query("SELECT `pd`.`name`, `p`.`product_id`, `p`.`image`, `p`.`price` FROM `".DB_PREFIX."product` `p` JOIN `".DB_PREFIX."product_description` `pd` ON `p`.`product_id` = `pd`.`product_id` WHERE `p`.`product_id` IN ".$listProduct);
+                if ($query->num_rows) {
+                    foreach ($query->rows as $key => $result) {
+                        $tmp = array(
+                            'id' 				=> $result['product_id'],
+                            'name' 				=> $result['name'],
+                            'image' 			=> $result['image'],
+                            'price' 			=> $result['price']
+                        );
+                        array_push($products, $tmp);
+                    }
+                }
+            }
+        }
+        return $products;
+    }
 }

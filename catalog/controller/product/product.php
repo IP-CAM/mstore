@@ -159,6 +159,28 @@ class ControllerProductProduct extends Controller {
 		$product_info = $this->model_catalog_product->getProduct($product_id);
 
 		if ($product_info) {
+            $viewProduct = $this->session->data['view_product'];
+            if (empty($viewProduct)) {
+                $viewProduct = array();
+                array_push($viewProduct, $product_id);
+            } elseif ($viewProduct[0] != $product_id) {
+                $tmp = $viewProduct;
+                $viewProduct[0] = $product_id;
+                if (!empty($tmp[0]) && $tmp[0] != $product_id) {
+                    $viewProduct[1] = $tmp[0];
+                } elseif (!empty($tmp[1]) && $tmp[1] != $product_id) {
+                    $viewProduct[1] = $tmp[1];
+                }
+
+                if (!empty($tmp[1]) && $tmp[1] != $product_id && $tmp[1] != $viewProduct[1]) {
+                    $viewProduct[2] = $tmp[1];
+                } elseif (!empty($viewProduct[2])) {
+                    unset($viewProduct[2]);
+                }
+            }
+            ksort($viewProduct);
+            $this->session->data['view_product'] = $viewProduct;
+
 			$url = '';
 
 			if (isset($this->request->get['path'])) {
