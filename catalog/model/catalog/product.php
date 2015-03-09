@@ -591,7 +591,7 @@ class ModelCatalogProduct extends Model {
         $listProduct = '(';
         while ($notFound && $n < 3) {
             $randId = rand(0, $numProduct-1);
-            if (in_array($idList[$randId], $idList)) {
+            if (!empty($idList[$randId]) && in_array($idList[$randId], $idList)) {
                 $n++;
                 $listProduct .= ($n == 3 ? $idList[$randId] : $idList[$randId].', ');
                 unset($idList[$randId]);

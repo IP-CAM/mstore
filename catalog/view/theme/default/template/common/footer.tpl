@@ -2,31 +2,35 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12">
-                <div class="row">
-                    <?php if (!empty($view_products) && count($view_products) > 0) : ?>
+                <div class="row footer-product">
                     <h3>Sản Phẩm Vừa Xem</h3>
-                    <?php foreach ($view_products as $key => $viewProduct) : ?>
-                    <div class="col-sm-4 col-xs-12 can-like">
-                        <div class="item">
-                            <img src="<?php echo $viewProduct['image']; ?>">
-                            <h4><?php echo $viewProduct['name']; ?></h4>
-                            <span><?php echo $viewProduct['price']; ?></span>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
+                    <?php if (!empty($view_products) && count($view_products) > 0) : ?>
+                        <?php foreach ($view_products as $key => $viewProduct) : ?>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="item">
+                                    <a href="<?php echo $viewProduct['href']; ?>">
+                                        <img src="<?php echo $viewProduct['image']; ?>">
+                                        <h4><?php echo $viewProduct['name']; ?></h4>
+                                        <span><?php echo $viewProduct['price']; ?></span>
+                                    </a>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
-                <div class="row">
+                <div class="row footer-product">
                     <?php if (count($can_like_products) > 0) : ?>
-                        <h3>Sản Phẩm Bán Chạy</h3>
+                        <h3>Có Thể Bạn Thích</h3>
                         <?php foreach ($can_like_products as $key => $bestProduct) : ?>
                             <div class="col-sm-4 col-xs-12 can-like">
                                 <div class="item">
+                                    <a href="<?php echo $bestProduct['href']; ?>">
                                         <img src="<?php echo $bestProduct['image']; ?>">
                                         <h4><?php echo $bestProduct['name']; ?></h4>
                                         <span><?php echo $bestProduct['price']; ?></span>
+                                    </a>
                                 </div>
                             </div>
                         <?php endforeach; ?>

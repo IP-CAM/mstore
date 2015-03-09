@@ -118,6 +118,7 @@ class ControllerCommonHeader extends Controller {
 						} else {
 							$best_product[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
 						}
+                        $best_product[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['id']);
 					}
 				}
 
