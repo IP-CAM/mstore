@@ -1097,3 +1097,162 @@
 2015-03-06 5:53:46 - PHP Notice:  Undefined offset: 12 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
 2015-03-06 5:53:46 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
 2015-03-06 5:53:46 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:27:05 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:27:05 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:27:20 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:27:20 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:30:42 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:30:42 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:35:35 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:35:35 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:42:17 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:42:17 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:43:16 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 5:43:16 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:08:31 - PHP Warning:  in_array() expects parameter 2 to be array, string given in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 163
+2015-03-09 7:08:31 - PHP Notice:  Undefined offset: 2 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 7:08:31 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:08:31 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:09:30 - PHP Warning:  in_array() expects parameter 2 to be array, string given in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 163
+2015-03-09 7:09:32 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:09:32 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:09:35 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:09:56 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:09:56 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:09:58 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:10:32 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:10:32 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:22:33 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:22:53 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:22:53 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:23:32 - PHP Notice:  Undefined offset: 0 in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 174
+2015-03-09 7:23:47 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:23:47 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:24:35 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:24:35 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:26:50 - PHP Notice:  Undefined offset: 6 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 7:26:51 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:26:51 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:28:30 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:28:30 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:28:50 - PHP Notice:  Undefined offset: 0 in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 173
+2015-03-09 7:30:07 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:30:07 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:30:12 - PHP Notice:  Undefined offset: 0 in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 173
+2015-03-09 7:30:13 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:30:13 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:30:16 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:30:25 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:30:25 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:38:05 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:38:09 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:38:09 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:38:18 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:38:27 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:38:27 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:38:36 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:38:40 - PHP Notice:  Undefined offset: 4 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 7:38:40 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:38:40 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:39:33 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:39:33 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:39:38 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:39:38 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:40:07 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:40:07 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:41:31 - PHP Notice:  Undefined offset: 7 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 7:41:31 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:41:31 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:41:47 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:41:47 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:41:56 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:41:56 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:42:01 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:42:09 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:42:09 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:42:15 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:42:40 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:42:40 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:42:46 - PHP Notice:  Undefined index: view_product in /opt/lampp/htdocs/works/mstore/catalog/controller/product/product.php on line 157
+2015-03-09 7:42:57 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:42:57 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:43:13 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:43:13 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:43:59 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:43:59 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:44:08 - PHP Notice:  Undefined offset: 16 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 7:44:09 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:44:09 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:44:27 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:44:27 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:44:56 - PHP Notice:  Undefined offset: 8 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 7:44:56 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:44:56 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:47:24 - PHP Notice:  Undefined offset: 12 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 7:47:24 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:47:24 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:47:37 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:47:37 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:48:49 - PHP Notice:  Undefined offset: 4 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 7:48:49 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:48:49 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:49:23 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:49:23 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:49:42 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:49:42 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:01 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:01 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:07 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:07 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:18 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:18 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:28 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:28 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:39 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:39 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:57 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:50:57 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:51:12 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:51:12 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:51:26 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 7:51:26 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:06:26 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:06:26 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:06:34 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' , )' at line 1<br />Error No: 1064<br />SELECT `pd`.`name`, `p`.`product_id`, `p`.`image`, `p`.`price` FROM `mst_product` `p` JOIN `mst_product_description` `pd` ON `p`.`product_id` = `pd`.`product_id` WHERE `p`.`product_id` IN (, , ) in /opt/lampp/htdocs/works/mstore/system/library/db/mysqli.php on line 40
+2015-03-09 8:06:34 - PHP Notice:  Trying to get property of non-object in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 628
+2015-03-09 8:06:52 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:06:52 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:07:48 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' , )' at line 1<br />Error No: 1064<br />SELECT `pd`.`name`, `p`.`product_id`, `p`.`image`, `p`.`price` FROM `mst_product` `p` JOIN `mst_product_description` `pd` ON `p`.`product_id` = `pd`.`product_id` WHERE `p`.`product_id` IN (, , ) in /opt/lampp/htdocs/works/mstore/system/library/db/mysqli.php on line 40
+2015-03-09 8:07:48 - PHP Notice:  Trying to get property of non-object in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 628
+2015-03-09 8:07:48 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:07:48 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:08:00 - PHP Notice:  Undefined offset: 14 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 8:08:00 - PHP Notice:  Undefined offset: 16 in /opt/lampp/htdocs/works/mstore/catalog/model/catalog/product.php on line 594
+2015-03-09 8:08:47 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:08:47 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:12:30 - PHP Notice:  Undefined variable: view_products in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/footer.tpl on line 8
+2015-03-09 8:12:30 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/footer.tpl on line 8
+2015-03-09 8:12:30 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:12:30 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:13:09 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:13:09 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:13:33 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:13:33 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:15:05 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:15:05 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:15:25 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:15:25 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:15:33 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:15:33 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:18:35 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:18:35 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:18:42 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:18:42 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:19:07 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:19:07 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:19:11 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:19:11 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:20:06 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:20:06 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:20:12 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173
+2015-03-09 8:20:12 - PHP Warning:  Invalid argument supplied for foreach() in /opt/lampp/htdocs/works/mstore/catalog/view/theme/default/template/common/header.tpl on line 173

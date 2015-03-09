@@ -84,6 +84,22 @@ class ControllerCommonFooter extends Controller {
         }
         $data['can_like_products'] = $canLikeProduct;
 
+        // just view product
+        $viewProduct = $this->session->data['view_product'];
+        if (!empty($viewProduct)) {
+            $justViewProducts = $this->model_catalog_product->getProductByIds($viewProduct);
+            if ($justViewProducts) {
+                foreach ($justViewProducts as $key => $row) {
+                    if ($row['image']) {
+                        $justViewProducts[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                    } else {
+                        $justViewProducts[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                    }
+                }
+            }
+            $data['view_products'] = $justViewProducts;
+        }
+
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/footer.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/template/common/footer.tpl', $data);
 		} else {

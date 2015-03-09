@@ -614,4 +614,30 @@ class ModelCatalogProduct extends Model {
         }
         return $products;
     }
+
+    public function getProductByIds($ids = array()) {
+        $products = array();
+        if (count($ids) > 0) {
+            $listProduct = '(';
+            foreach ($ids as $key => $result) {
+                $listProduct .= ($key == (count($ids) - 1) ? $result : $result.', ');
+            }
+            $listProduct .= ')';
+            if ($listProduct != '()') {
+                $query = $this->db->query("SELECT `pd`.`name`, `p`.`product_id`, `p`.`image`, `p`.`price` FROM `".DB_PREFIX."product` `p` JOIN `".DB_PREFIX."product_description` `pd` ON `p`.`product_id` = `pd`.`product_id` WHERE `p`.`product_id` IN ".$listProduct);
+                if ($query->num_rows) {
+                    foreach ($query->rows as $key => $result) {
+                        $tmp = array(
+                            'id' 				=> $result['product_id'],
+                            'name' 				=> $result['name'],
+                            'image' 			=> $result['image'],
+                            'price' 			=> $result['price']
+                        );
+                        array_push($products, $tmp);
+                    }
+                }
+            }
+        }
+        return $products;
+    }
 }
