@@ -963,3 +963,7 @@
 2015-03-03 17:52:21 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\mstore\catalog\view\theme\default\template\common\header.tpl on line 173
 2015-03-03 17:52:25 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in D:\xampp\htdocs\mstore\catalog\view\theme\default\template\common\header.tpl on line 173
 2015-03-03 17:52:25 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\mstore\catalog\view\theme\default\template\common\header.tpl on line 173
+2015-03-09 14:36:29 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in D:\xampp\htdocs\mstore\catalog\view\theme\default\template\common\header.tpl on line 173
+2015-03-09 14:36:29 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\mstore\catalog\view\theme\default\template\common\header.tpl on line 173
+2015-03-09 14:39:36 - PHP Warning:  array_chunk(): Size parameter expected to be greater than 0 in D:\xampp\htdocs\mstore\catalog\view\theme\default\template\common\header.tpl on line 173
+2015-03-09 14:39:36 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\mstore\catalog\view\theme\default\template\common\header.tpl on line 173
