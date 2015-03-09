@@ -70,6 +70,36 @@ class ControllerCommonFooter extends Controller {
 			$this->model_tool_online->whosonline($ip, $this->customer->getId(), $url, $referer);
 		}
 
+        // you can like
+        $this->load->model('catalog/product');
+        $canLikeProduct = $this->model_catalog_product->getYouCanLikeProduct();
+        if ($canLikeProduct) {
+            foreach ($canLikeProduct as $key => $row) {
+                if ($row['image']) {
+                    $canLikeProduct[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                } else {
+                    $canLikeProduct[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                }
+            }
+        }
+        $data['can_like_products'] = $canLikeProduct;
+
+        // just view product
+        $viewProduct = $this->session->data['view_product'];
+        if (!empty($viewProduct)) {
+            $justViewProducts = $this->model_catalog_product->getProductByIds($viewProduct);
+            if ($justViewProducts) {
+                foreach ($justViewProducts as $key => $row) {
+                    if ($row['image']) {
+                        $justViewProducts[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                    } else {
+                        $justViewProducts[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                    }
+                }
+            }
+            $data['view_products'] = $justViewProducts;
+        }
+
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/footer.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/template/common/footer.tpl', $data);
 		} else {
