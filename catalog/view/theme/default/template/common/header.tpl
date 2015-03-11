@@ -182,7 +182,18 @@
                             <h3 class="hidden-xs">Sản Phẩm Bán Chạy</h3>
                             <div class="submenu-content">
                                 <?php foreach ($category['best_product'] as $key => $bestProduct) : ?>
-                                    <div class="submenu-item <?php echo ($key > 0 ? 'hidden-xs' : ''); ?>">
+                                    <?php
+                                        if ($key > 3) {
+                                            $hideClass = "hidden-xs hidden-sm hidden-md";
+                                        } elseif ($key >= 2) {
+                                            $hideClass = "hidden-xs hidden-sm";
+                                        } elseif ($key >= 1) {
+                                            $hideClass = "hidden-xs";
+                                        } else {
+                                            $hideClass = '';
+                                        }
+                                    ?>
+                                    <div class="submenu-item <?php echo $hideClass; ?>">
                                         <a href="<?php echo $bestProduct['href']; ?>">
                                             <img src="<?php echo $bestProduct['image']; ?>">
                                             <h4><?php echo $bestProduct['name']; ?></h4>

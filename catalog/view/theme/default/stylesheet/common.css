@@ -229,12 +229,11 @@
 .pan-submenu .submenu {
 	/*display: none;*/
 	height: 170px;
-	width: 900px;
+	width: 96%;
 	margin: 10px auto;
 }
 .pan-submenu .submenu .submenu-menu {
 	float: left;
-	width: 250px;
 	text-align: right;
 	text-transform: capitalize;
 }
@@ -250,7 +249,6 @@
 }
 .pan-submenu .submenu .submenu-item-list {
 	float: left;
-	width: 600px;
 	margin-left: 40px;
 }
 .pan-submenu .submenu .submenu-item-list h3 {
@@ -545,6 +543,12 @@ ul.menu-xs {
     bottom: 0px;
 }
 /* end footer product */
+
+/* carousel footer */
+    .footer-carousel-title {
+        font-weight: bold;
+    }
+/* end carousel footer */
 
 .border-top {
     width: 95%;
@@ -1033,5 +1037,12 @@ ul.menu-xs {
         top: 20px;
         right: 50%;
         margin-right: -80px;
+    }
+}
+
+/* 350 width screen */
+@media screen and (max-width: 350px) {
+    .pan-submenu .submenu .submenu-item-list {
+        display: none;
     }
 }
