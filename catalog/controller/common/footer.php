@@ -71,6 +71,7 @@ class ControllerCommonFooter extends Controller {
 		}
 
         // you can like
+        $this->load->model('tool/image');
         $this->load->model('catalog/product');
         $canLikeProduct = $this->model_catalog_product->getYouCanLikeProduct();
         if ($canLikeProduct) {
@@ -89,7 +90,7 @@ class ControllerCommonFooter extends Controller {
         $viewProduct = !empty($this->session->data['view_product']) ? $this->session->data['view_product'] : null;
         if (!empty($viewProduct)) {
             $justViewProducts = $this->model_catalog_product->getProductByIds($viewProduct);
-            if ($justViewProducts) {
+            if (count($justViewProducts) == 1) {
                 foreach ($justViewProducts as $key => $row) {
                     if ($row['image']) {
                         $justViewProducts[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
@@ -98,8 +99,76 @@ class ControllerCommonFooter extends Controller {
                     }
                     $justViewProducts[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['id']);
                 }
+                $viewProduct = $this->model_catalog_product->getTopSellerProduct();
+                if ($viewProduct) {
+                    foreach ($viewProduct as $key => $row) {
+                        if ($row['image']) {
+                            $viewProduct[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                        } else {
+                            $viewProduct[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                        }
+                        $viewProduct[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['product_id']);
+                    }
+                    $justViewProducts[2] = $viewProduct[0];
+                    $justViewProducts[3] = $viewProduct[1];
+                }
+            } elseif (count($justViewProducts) == 2) {
+                foreach ($justViewProducts as $key => $row) {
+                    if ($row['image']) {
+                        $justViewProducts[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                    } else {
+                        $justViewProducts[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                    }
+                    $justViewProducts[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['id']);
+                }
+                $viewProduct = $this->model_catalog_product->getTopSellerProduct();
+                if ($viewProduct) {
+                    foreach ($viewProduct as $key => $row) {
+                        if ($row['image']) {
+                            $viewProduct[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                        } else {
+                            $viewProduct[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                        }
+                        $viewProduct[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['product_id']);
+                    }
+                    $justViewProducts[3] = $viewProduct[1];
+                }
+            } elseif (count($justViewProducts) == 3) {
+                foreach ($justViewProducts as $key => $row) {
+                    if ($row['image']) {
+                        $justViewProducts[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                    } else {
+                        $justViewProducts[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                    }
+                    $justViewProducts[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['id']);
+                }
+            } else {
+                $justViewProducts = $this->model_catalog_product->getTopSellerProduct();
+                if ($justViewProducts) {
+                    foreach ($justViewProducts as $key => $row) {
+                        if ($row['image']) {
+                            $justViewProducts[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                        } else {
+                            $justViewProducts[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                        }
+                        $justViewProducts[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['product_id']);
+                    }
+                }
             }
             $data['view_products'] = $justViewProducts;
+        } else {
+            $viewProduct = $this->model_catalog_product->getTopSellerProduct();
+            if ($viewProduct) {
+                foreach ($viewProduct as $key => $row) {
+                    if ($row['image']) {
+                        $viewProduct[$key]['image'] = $this->model_tool_image->resize($row['image'], 80, 80);
+                    } else {
+                        $viewProduct[$key]['image'] = $this->model_tool_image->resize('placeholder.png', 80, 80);
+                    }
+                    $viewProduct[$key]['href'] = $this->url->link('product/product', 'product_id=' . $row['id']);
+                }
+            }
+            $data['view_products'] = $viewProduct;
         }
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/footer.tpl')) {

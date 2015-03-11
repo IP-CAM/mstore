@@ -543,7 +543,7 @@ class ModelCatalogProduct extends Model {
 		$listProduct .= ')';
 
 		if ($listProduct != '()') {
-			$query = $this->db->query("SELECT `p`.`product_id` as id, SUM(`p`.`quantity`) AS `total` FROM `".DB_PREFIX."order_product` `p` WHERE `p`.`product_id` IN ".$listProduct." GROUP BY `p`.`product_id` ORDER BY `total` DESC LIMIT 3");
+			$query = $this->db->query("SELECT `p`.`product_id` as id, SUM(`p`.`quantity`) AS `total` FROM `".DB_PREFIX."order_product` `p` WHERE `p`.`product_id` IN ".$listProduct." GROUP BY `p`.`product_id` ORDER BY `total` DESC LIMIT 5");
 		}
 
 		$listProduct = '(';
@@ -639,5 +639,34 @@ class ModelCatalogProduct extends Model {
             }
         }
         return $products;
+    }
+
+    public function getTopSellerProduct() {
+        $query = $this->db->query("SELECT `p`.`product_id` as id, SUM(`p`.`quantity`) AS `total` FROM `".DB_PREFIX."order_product` `p` GROUP BY `p`.`product_id` ORDER BY `total` DESC LIMIT 3");
+        if ($query->num_rows) {
+            $listProduct = '(';
+            foreach ($query->rows as $key => $result) {
+                $listProduct .= ($key == ($query->num_rows - 1) ? $result['id'] : $result['id'].', ');
+            }
+            $listProduct .= ')';
+            if ($listProduct != '()') {
+                $query = $this->db->query("SELECT `pd`.`name`, `p`.`product_id`, `p`.`image`, `p`.`price` FROM `".DB_PREFIX."product` `p` JOIN `".DB_PREFIX."product_description` `pd` ON `p`.`product_id` = `pd`.`product_id` WHERE `p`.`product_id` IN ".$listProduct);
+            }
+
+            $products = array();
+            if ($query->num_rows) {
+                foreach ($query->rows as $key => $result) {
+                    $products[] = array(
+                        'product_id' 				=> $result['product_id'],
+                        'name' 				=> $result['name'],
+                        'image' 			=> $result['image'],
+                        'price' 			=> $result['price']
+                    );
+                }
+            }
+            return $products;
+        } else {
+            return $this->getLatestProducts(3);
+        }
     }
 }
